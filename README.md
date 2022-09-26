@@ -6,9 +6,8 @@ Cash Register Manager is an application that takes bill amount and cash paid as 
 Teck stack:
 <br>
 
-<li>HTML</li>
+<li>React JS</li>
 <li>CSS</li>
-<li>JavaScript</li>
 <br>
 
 Live link: [Cash Register Manager](https://ghp-bill-change-generator.netlify.app/)
