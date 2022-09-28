@@ -30,6 +30,7 @@ function App() {
       else {
         let amount = intCashPaid - intBillAmt;
         denominationHandler(amount);
+        setError("");
       }
     }
   };
