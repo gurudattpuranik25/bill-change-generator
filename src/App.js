@@ -20,8 +20,15 @@ function App() {
   const calculateChange = (billAmt, cashPaid) => {
     const intBillAmt = parseInt(billAmount);
     const intCashPaid = parseInt(cashPaid);
-    if (billAmt === "" || cashPaid === "")
-      setError("Please enter all the fields⛔");
+    if (
+      billAmt === "" ||
+      cashPaid === "" ||
+      billAmt === "0" ||
+      cashPaid === "0" ||
+      billAmt < 0 ||
+      cashPaid < 0
+    )
+      setError("Please enter correct values in the fields⛔");
     else {
       if (intBillAmt > intCashPaid)
         setError(
